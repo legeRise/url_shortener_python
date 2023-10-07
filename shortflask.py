@@ -26,7 +26,7 @@ def shortener():
 
 
     json.dump(data, open('shortened_urls.json', 'w'), indent=4)    
-    return render_template('short.html',short_url=f"http://127.0.0.1:5000/{short_url}")
+    return render_template('short.html',short_url=f"{short_url}")
 
 
 
