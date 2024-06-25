@@ -4,7 +4,7 @@ This project is a simple implementation of a URL shortener using Flask.
 
 ## Setup and Running
 
-##Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/legeRise/url_shortener_python.git
 ```
@@ -13,7 +13,7 @@ git clone https://github.com/legeRise/url_shortener_python.git
 cd url_shortener_python
 ```
 
-##Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
