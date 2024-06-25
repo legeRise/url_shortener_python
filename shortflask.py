@@ -32,14 +32,16 @@ def shortener():
 
 @app.route('/<short_url>')
 def download(short_url):
-    with open('shortened_urls.json') as file:
-        db = json.load(file)
-
-        if db[short_url]:
-            long_url = db[short_url]
+    if os.path.exists('shortened_urls.json'):
+        with open('shortened_urls.json') as file:
+            db = json.load(file)
+        long_url = db.get(short_url)
+        if long_url:
             return redirect(long_url)
         else:
-            return "Short URL not found", 404
+            return "Error: URL not found in database", 404
+    else:
+        return "Error: URL database not found", 404
 
 
 
