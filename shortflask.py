@@ -24,9 +24,8 @@ def shortener():
     data = json.load(open('shortened_urls.json', 'r')) if 'shortened_urls.json' in os.listdir() else {}
     data[short_url] = long_url
 
-
     json.dump(data, open('shortened_urls.json', 'w'), indent=4)    
-    return render_template('short.html',short_url=f"{short_url}")
+    return render_template('short.html',short_url=short_url)
 
 
 
@@ -47,4 +46,4 @@ def download(short_url):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host = '0.0.0.0',port=9200)
