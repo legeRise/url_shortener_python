@@ -24,3 +24,6 @@ python shortflask.py
 ```
 
 The server will start running on localhost:9200  (because 9200 is port I had selected)
+
+![Interface](https://raw.githubusercontent.com/legerise/url_shortener_python/master/interface.png)
+
