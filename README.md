@@ -27,3 +27,6 @@ The server will start running on localhost:9200  (because 9200 is port I had sel
 
 ![Interface](https://raw.githubusercontent.com/legerise/url_shortener_python/master/shortener_interface.png)
 
+
+You can also checkout this project live on https://bepythonic92.pythonanywhere.com/
+
